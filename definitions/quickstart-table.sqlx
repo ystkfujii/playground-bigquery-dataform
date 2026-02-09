@@ -4,7 +4,7 @@ config {
 
 SELECT
   fruit,
-  "${dataform.projectConfig.vars.ENV}" AS environment_label,
-  ${utils.addOne(count)} AS count1
+  ${utils.replaceEnv(dataform.projectConfig.vars.ENV)} AS environment_label,
+  ${utils.addOne("count")} AS count
 FROM
   ${ref("quickstart-source")}
