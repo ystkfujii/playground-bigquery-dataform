@@ -2,3 +2,5 @@ defaultProject: code-review-7288e
 defaultDataset: dataform
 defaultAssertionDataset: dataform_assertions
 dataformCoreVersion: 3.0.37
+vars:
+  ENV: "dev"
